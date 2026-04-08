@@ -1,22 +1,35 @@
 {% extends "main.html" %}
-
+ 
 {% block page_name %}
-About Cats on Skis
+    About Cats on Skis
 {% endblock %}
-
+ 
 {% block content %}
-<h3>About Cats on Skis</h3>
-
-<p>
-We love Cats on Skis! This is the absolute best place to find information about cats on skis.
-</p>
-
-<h3>Your Authors</h3>
-
-<p>
-Slalom Sammy 
-<img src="{{ url_for('images', image='slalom-sammy') }}">
-</p>
-
+    <h1 class="title">About Cats on Skis</h1>
+ 
+    <div class="box">
+        <p>
+            We love Cats on Skis! This is the absolute best place to find information about cats on skis.
+        </p>
+    </div>
+ 
+    <h2 class="subtitle">Your Authors</h2>
+ 
+    <div class="card author-card">
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image author-image">
+                        <img src="{{ url_for('images', image='slalom-sammy') }}" alt="Slalom Sammy the cat">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-4">Slalom Sammy</p>
+                    <p class="subtitle is-6">Chief Cat Correspondent</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
 {% endblock %}
 
